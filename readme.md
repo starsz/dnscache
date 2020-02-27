@@ -25,6 +25,13 @@ The cache is thread safe. Create a new instance by specifying how long each entr
     //get the first net.IP as string
     ip, _ := resolver.FetchOneString("api.viki.io")
 
+    // get the random net.IP
+    ip, _ := resolver.FetchRandomOne("api.viki.io")
+
+    // get the random net.IP as string
+    ip, _ := resolver.FetchRandomOneString("api.viki.io")
+
+
 If you are using an `http.Transport`, you can use this cache by speficifying a
 `Dial` function:
 
